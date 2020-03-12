@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="L0 Uts" tests="27" failures="0" time="5.786">
+  <testsuite name="KubeCardWithTable component tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:08" time="3.798" tests="1">
+    <testcase classname="KubeCardWithTable component tests Check header of the KubeCardWithTable component" name="KubeCardWithTable component tests Check header of the KubeCardWithTable component" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="ServiceDetails component tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:08" time="4.058" tests="2">
+    <testcase classname="ServiceDetails component tests Check header of the ServiceDetails component" name="ServiceDetails component tests Check header of the ServiceDetails component" time="0.058">
+    </testcase>
+    <testcase classname="ServiceDetails component tests Check service ServiceDetails component after mount" name="ServiceDetails component tests Check service ServiceDetails component after mount" time="0.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkloadDetails component tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:08" time="4.168" tests="2">
+    <testcase classname="WorkloadDetails component tests Check header of the WorkloadDetails component" name="WorkloadDetails component tests Check header of the WorkloadDetails component" time="0.055">
+    </testcase>
+    <testcase classname="WorkloadDetails component tests Check WorkloadDetails component after mount" name="WorkloadDetails component tests Check WorkloadDetails component after mount" time="0.112">
+    </testcase>
+  </testsuite>
+  <testsuite name="Utils isOwnerMatched Tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:11" time="0.474" tests="12">
+    <testcase classname="Utils isOwnerMatched Tests isOwnerMatched checking for:: ownerMatched" name="Utils isOwnerMatched Tests isOwnerMatched checking for:: ownerMatched" time="0.004">
+    </testcase>
+    <testcase classname="Utils isOwnerMatched Tests isOwnerMatched checking for:: ownerNotMatched" name="Utils isOwnerMatched Tests isOwnerMatched checking for:: ownerNotMatched" time="0.001">
+    </testcase>
+    <testcase classname="Utils isOwnerMatched Tests isOwnerMatched checking for:: zeroOwners" name="Utils isOwnerMatched Tests isOwnerMatched checking for:: zeroOwners" time="0">
+    </testcase>
+    <testcase classname="Utils isOwnerMatched Tests isOwnerMatched checking for:: moreOwnersFirstMatched" name="Utils isOwnerMatched Tests isOwnerMatched checking for:: moreOwnersFirstMatched" time="0.001">
+    </testcase>
+    <testcase classname="Utils isOwnerMatched Tests isOwnerMatched checking for:: moreOwnersFirstNotMatched" name="Utils isOwnerMatched Tests isOwnerMatched checking for:: moreOwnersFirstNotMatched" time="0">
+    </testcase>
+    <testcase classname="Utils getPillTags count Tests getPillTags checking for:: zeroLabels" name="Utils getPillTags count Tests getPillTags checking for:: zeroLabels" time="0.001">
+    </testcase>
+    <testcase classname="Utils getPillTags count Tests getPillTags checking for:: nullInput" name="Utils getPillTags count Tests getPillTags checking for:: nullInput" time="0">
+    </testcase>
+    <testcase classname="Utils getPillTags count Tests getPillTags checking for:: oneLabel" name="Utils getPillTags count Tests getPillTags checking for:: oneLabel" time="0.001">
+    </testcase>
+    <testcase classname="Utils getPillTags count Tests getPillTags checking for:: twoLabels" name="Utils getPillTags count Tests getPillTags checking for:: twoLabels" time="0.001">
+    </testcase>
+    <testcase classname="Utils getPillTags value check Tests getPillTags checking for:: oneLabel value" name="Utils getPillTags value check Tests getPillTags checking for:: oneLabel value" time="0.001">
+    </testcase>
+    <testcase classname="Utils getPillTags value check Tests getPillTags checking for:: twoLabels value" name="Utils getPillTags value check Tests getPillTags checking for:: twoLabels value" time="0.001">
+    </testcase>
+    <testcase classname="Utils getPillTags value check Tests getPillTags checking for:: space with quotes value" name="Utils getPillTags value check Tests getPillTags checking for:: space with quotes value" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="ImageDetailsActionsCreator getImageDetails Tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:12" time="0.353" tests="2">
+    <testcase classname="ImageDetailsActionsCreator getImageDetails Tests If imageDetails are not defined in store then call image service" name="ImageDetailsActionsCreator getImageDetails Tests If imageDetails are not defined in store then call image service" time="0.004">
+    </testcase>
+    <testcase classname="ImageDetailsActionsCreator getImageDetails Tests If image details are present in store then do not call image service" name="ImageDetailsActionsCreator getImageDetails Tests If image details are present in store then do not call image service" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="KubeServiceBase Tests" errors="0" failures="0" skipped="0" timestamp="2019-06-27T09:08:12" time="0.332" tests="8">
+    <testcase classname="KubeServiceBase Tests getPods calls with right input" name="KubeServiceBase Tests getPods calls with right input" time="0.003">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getDeployments calls with right input" name="KubeServiceBase Tests getDeployments calls with right input" time="0.001">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getReplicaSets calls with right input" name="KubeServiceBase Tests getReplicaSets calls with right input" time="0.002">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getServices calls with right input" name="KubeServiceBase Tests getServices calls with right input" time="0.001">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getDaemonSets calls with right input" name="KubeServiceBase Tests getDaemonSets calls with right input" time="0">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getStatefulSets calls with right input" name="KubeServiceBase Tests getStatefulSets calls with right input" time="0.001">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getPods calls with labelSelector as input" name="KubeServiceBase Tests getPods calls with labelSelector as input" time="0.002">
+    </testcase>
+    <testcase classname="KubeServiceBase Tests getPodLog should give log" name="KubeServiceBase Tests getPodLog should give log" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

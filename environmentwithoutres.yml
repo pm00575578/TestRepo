@@ -1,0 +1,9 @@
+jobs:
+- deployment: job1
+  environment: Test0706a
+  strategy:
+   runOnce:
+    deploy:
+     steps:
+     - script: echo Hello, world!
+       displayName: 'Run a one-line script'

@@ -1,0 +1,354 @@
+stages:
+- stage: Build_1
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins109'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins130'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins151'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins164'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins187'
+        jobName: T1
+
+- stage: Build_2
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins189'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins204'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins222'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins223'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins224'
+        jobName: T1
+    
+- stage: Build_3
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins247'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins276'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins284'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins286'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins296'
+        jobName: T1
+
+- stage: Build_4
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins3'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins301'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins355'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins36'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins387'
+        jobName: T1
+
+- stage: Build_5
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins395'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins418'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins462'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins475'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins555'
+        jobName: T1
+    
+- stage: Build_6
+  condition: always()
+  jobs:
+  - job: Job_1
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins559'
+        jobName: T1
+  - job: Job_2
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins581'
+        jobName: T1
+  - job: Job_3
+    displayName: J1
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins594'
+        jobName: T1
+  - job: Job_4
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins615'
+        jobName: T1
+  - job: Job_5
+    displayName: J2
+    condition: always()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins708'
+        jobName: T1

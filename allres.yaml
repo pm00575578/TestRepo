@@ -1,0 +1,47 @@
+resources:
+- repo: self
+  fetchDepth: 15
+
+variables:
+- group: a
+
+stages:
+- stage: Build_1
+  jobs:
+  - job: Job_1
+    displayName: Phase-1
+    condition: succeeded()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: DownloadSecureFile@1
+      displayName: 'Download secure file'
+      inputs:
+        secureFile: '6c27e470-0bc7-47b6-bb07-91192677fa3c'
+
+- stage: Build_2
+  jobs:
+  - job: Job_1
+    displayName: Phase-1
+    condition: succeeded()
+    pool:
+      name: anraghunpool2
+    steps:
+    - task: AzureAppServiceManage@0
+      displayName: 'Restart Azure App Service: ajgsbrtest1app'
+      inputs:
+        azureSubscription: 'armconn'
+        Action: 'Restart Azure App Service'
+        WebAppName: ajgsbrtest1app
+
+  - job: Job_2
+    displayName: Phase-2
+    condition: succeededOrFailed()
+    pool:
+      name: anraghunpool
+    steps:
+    - task: JenkinsDownloadArtifacts@1
+      displayName: 'Download artifacts produced by T1'
+      inputs:
+        jenkinsServerConnection: 'jenkins3'
+        jobName: T1
